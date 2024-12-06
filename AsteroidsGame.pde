@@ -19,15 +19,15 @@ public void draw()
     jim[i].show();
   }
   
-  for(int j = 0; j < Asteroids.size(); j++){
-     Asteroids.get(j).show();
-    Asteroids.get(j).move();
+ for(int j = Asteroids.size()-1; j>=0;j--){
+   Asteroids.get(j).show();
+   Asteroids.get(j).move();
    
-    float d = dist((float)(bob.getX()),(float)(bob.getY()),(float)(Asteroids.get(j).getX()),(float)(Asteroids.get(j).getY()));
-    if(d<20){
-      Asteroids.remove(j);
-    }
-  }
+   float d = dist((float)(bob.getX()),(float)(bob.getY()),(float)(Asteroids.get(j).getX()),(float)(Asteroids.get(j).getY()));
+   if(d<20){
+     Asteroids.remove(j);
+   }
+ }
   bob.show();
   bob.move();
 }
@@ -61,5 +61,3 @@ public void keyPressed(){
   
   //point direction can be different than moving direction
 }
-
-
