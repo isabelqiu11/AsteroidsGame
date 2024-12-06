@@ -8,11 +8,9 @@ class Asteroid extends Floater{
     myCenterX = Math.random()*800;
     myCenterY = Math.random()*800;
 
-if(Math.random() < 0. 5){ 
-
-	myXspeed = (Math.random()*2)+1;
-	myYspeed  = (Math.random()*2)+1;
-
+if(Math.random() < 0.5){ 
+  myXspeed = (Math.random()*2)+1;
+  myYspeed  = (Math.random()*2)+1;
 }else{ //making sure no zero & stationery asteroids
 myXspeed = (Math.random()*2)-3;
 myYspeed = (Math.random()*2)-3;
@@ -32,3 +30,4 @@ myYspeed = (Math.random()*2)-3;
     return myCenterY; 
   }
 }
+
