@@ -2,8 +2,8 @@
 Spaceship bob = new Spaceship();
 Star [] jim = new Star[1000];
 //int score = 0;
-ArrayList <Bullet> Bullets = new ArrayList <Bullet>();
-ArrayList <Asteroid> Asteroids = new ArrayList <Asteroid> ();
+ArrayList<Bullet>Bullets = new ArrayList<Bullet>();
+ArrayList<Asteroid>Asteroids = new ArrayList<Asteroid>();
 
 public void setup() 
 {
