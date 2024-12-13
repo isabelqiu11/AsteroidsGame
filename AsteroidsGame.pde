@@ -83,7 +83,7 @@ public void keyPressed(){
     bob.turn(10);  //turn right
   }
   
- if(key == '3'){
+ if(key == ' '){
    Bullets.add(new Bullet(bob));
  }
 }
