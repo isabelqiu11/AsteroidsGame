@@ -33,4 +33,16 @@ public double getY(){
   public void setDirection(double n){
     myPointDirection = n;
   }
+
+public double getYspeed(){
+    return myYspeed; 
+  }
+public double getXspeed(){
+    return myXspeed; 
+  }
+public double getPointDirection(){
+    return myPointDirection; 
+  }
+
 }
+
