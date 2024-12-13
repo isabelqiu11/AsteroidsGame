@@ -2,6 +2,7 @@
 Spaceship bob = new Spaceship();
 Star [] jim = new Star[1000];
 //int score = 0;
+boolean a = false;
 ArrayList<Bullet> Bullets = new ArrayList<Bullet>();
 ArrayList<Asteroid> Asteroids = new ArrayList<Asteroid>();
 
@@ -54,14 +55,19 @@ for (int i = 0; i < Bullets.size(); i++){
     }
   }
 }
+if(a  = true){
  for(int j = 0; j < Bullets.size(); j++){
    Bullets.get(j).show();
    Bullets.get(j).move();
+  
  }
+
+}
   bob.show();
   bob.move();
 }
 public void keyPressed(){
+
   //hyperspace
     if(key == 's'|| key == 'S'){
     bob.setXspeed(0);
@@ -84,7 +90,15 @@ public void keyPressed(){
   }
   
  if(key == 'e' || key == 'E'){
-   Bullets.add(new Bullet(bob));
+   //Bullets.add(new Bullet(bob));
+    a = true;
  }
 }
+}
+
+public void keyReleased(){
+  if(key =='e'){
+  a = false;
+}
+
 }
