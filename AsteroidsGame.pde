@@ -89,7 +89,7 @@ public void keyPressed(){
     bob.turn(10);  //turn right
   }
   
- if(key == ''){
+ if(key == 'e'|| key == 'E'){
    Bullets.add(new Bullet(bob));
     //a = true;
  }
